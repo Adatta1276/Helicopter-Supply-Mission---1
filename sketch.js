@@ -78,7 +78,7 @@ function draw() {
   packageSprite.y = packageBody.position.y;
   drawSprites();
 
-  keyInput(); 
+  keyPressed(); 
  
   console.log(packageSprite.x);//370
   console.log(packageSprite.y);//640
@@ -86,8 +86,7 @@ function draw() {
 
 
 
-function keyInput(){
-   if(keyCode === DOWN_ARROW) {
-     
+function keyPressed(){
+   if (keyCode === DOWN_ARROW) { 
+	   Matter.Body.setStatic(packageBody,false); 
    }
-}
