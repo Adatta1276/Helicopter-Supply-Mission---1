@@ -54,7 +54,7 @@ function setup() {
 	PB_options = {
 
 		'restitution' : 0.0,
-		'isStatic' : false
+		'isStatic' : true
 	}
 	 packageBody = Bodies.circle(width/2 , 200 , 5,PB_options );
 	World.add(world, packageBody); 
